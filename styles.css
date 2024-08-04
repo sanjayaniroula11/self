@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: minigap;
+}
+body{
+    background-color: #171717;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding:30px 50px;
+    justify-content: space-between;
+}
+.logo-section{
+    width: 100px;
+}
+.nav-links{
+    width: 50%;
+}
+.nav-links ul {
+    display: flex;
+    justify-content: end;
+    
+}
+.nav-links ul li{
+    margin-right: 100px;
+}
+.my-name{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.my-name h2{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #CD9C4D;
+}
+
+.my-intro{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.my-intro h2{
+    color: #D9B464;
+}
+
+.hero-wrapper{
+   margin-bottom: 30px;
+}
+main{
+    height: 100vh;
+}
+/*socials*/
+
+
+.socials {
+    position: fixed;
+    top: 35%;
+    left: -100px;
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials ul li {
+    cursor: pointer;
+    width: 150px;
+    text-align: left;
+    border: 1px solid #CD9C4D;
+    border-radius: 5px;
+    padding: 7px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    border: solid 1px #CD9C4D;
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: #CD9C4D;
+    color: black;
+}
+
+
+.one-social:hover {
+    margin-left: 100px;
+    transition: ease-in-out 0.3s;
+}
+
+/*services*/
+
+.service-provided {
+    /* margin: 30px auto; */
+    padding: 10px 50px;
+}
+
+.service-provided h1 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.one-grid {
+    width: 500px;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid green;
+
+    /* From https://css.glass */
+    background: #333333;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid #333333;
+
+}
+
+.one-grid:hover {
+    /* From https://css.glass */
+    background: rgba(173, 74, 239, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(173, 74, 239, 0.3);
+    transition: ease-in-out 0.2s;
+}
+
+.icon-section {
+    width: 30%;
+
+}
+
+.service-topic {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    text-transform:uppercase;
+    text-decoration: underline white;
+}
+
+.service-image {
+    width: 70%;
+}
+
+.service-description {
+    width: 70%;
+}
+
+.service-description p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px;
+    color: white;
+}
+
+.service-content {
+    display: flex;
+}
+
+
+.services-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/*-------------------*/
+
+/* From Uiverse.io by vinodjangid07 */ 
+.loader {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .truckWrapper {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: hidden;
+  }
+  /* truck upper body */
+  .truckBody {
+    width: 130px;
+    height: fit-content;
+    margin-bottom: 6px;
+    animation: motion 1s linear infinite;
+  }
+  /* truck suspension animation*/
+  @keyframes motion {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  /* truck's tires */
+  .truckTires {
+    width: 130px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 15px;
+    position: absolute;
+    bottom: 0;
+  }
+  .truckTires svg {
+    width: 24px;
+  }
+  
+  .road {
+    width: 100%;
+    height: 1.5px;
+    background-color: #282828;
+    position: relative;
+    bottom: 0;
+    align-self: flex-end;
+    border-radius: 3px;
+  }
+  .road::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #282828;
+    right: -50%;
+    border-radius: 3px;
+    animation: roadAnimation 1.4s linear infinite;
+    border-left: 10px solid white;
+  }
+  .road::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #282828;
+    right: -65%;
+    border-radius: 3px;
+    animation: roadAnimation 1.4s linear infinite;
+    border-left: 4px solid white;
+  }
+  
+  .lampPost {
+    position: absolute;
+    bottom: 0;
+    right: -90%;
+    height: 90px;
+    animation: roadAnimation 1.4s linear infinite;
+  }
+  .animation{
+    background-color: #CD9C4D;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+  }
+  @keyframes roadAnimation {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-350px);
+    }
+  }
+  

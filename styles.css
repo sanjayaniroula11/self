@@ -40,7 +40,10 @@ nav{
     font-weight: bold;
     color: #CD9C4D;
 }
-
+.sanjaya, .niroula{
+  color: #CD9C4D;
+  position: relative;
+}
 .my-intro{
     display: flex;
     justify-content: center;
@@ -52,6 +55,7 @@ nav{
 
 .hero-wrapper{
    margin-bottom: 30px;
+   position: relative;
 }
 main{
     height: 100vh;
@@ -63,6 +67,7 @@ main{
     position: fixed;
     top: 35%;
     left: -100px;
+    z-index: 999;
 }
 
 .socials ul {
@@ -100,20 +105,31 @@ main{
 
 /*services*/
 
+#heading{
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+#heading h1{
+  font-size: 100vh;
+}
+
 .service-provided {
     /* margin: 30px auto; */
     padding: 10px 50px;
+    display: none;
 }
 
-.service-provided h1 {
-    margin: auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-}
+
+
 
 .one-grid {
-    width: 500px;
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
     align-items: center;
     padding: 15px;
     border: 2px solid green;
@@ -183,6 +199,9 @@ main{
     margin-top: 50px;
 }
 
+
+
+ 
 
 /*-------------------*/
 
@@ -295,3 +314,8 @@ main{
     }
   }
   
+
+  .page{
+    height: 100vh;
+    background-color: red;
+  }

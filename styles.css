@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: minigap;
+  
 }
 body{
     background-color: #171717;
@@ -101,6 +102,10 @@ main{
 .one-social:hover {
     margin-left: 100px;
     transition: ease-in-out 0.3s;
+    background-color: #171717;
+    border: solid 1px purple ;
+    color: white;
+
 }
 
 /*services*/
@@ -118,7 +123,7 @@ main{
 .service-provided {
     /* margin: 30px auto; */
     padding: 10px 50px;
-    display: none;
+    
 }
 
 
@@ -126,12 +131,13 @@ main{
 
 .one-grid {
     width: 75%;
-    height: 100vh;
+    height: 85vh;
+    margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
     
     align-items: center;
-    padding: 15px;
+    padding: 50px;
     border: 2px solid green;
 
     /* From https://css.glass */
@@ -156,18 +162,21 @@ main{
 }
 
 .icon-section {
-    width: 30%;
+    width: 70%;
 
 }
 
 .service-topic {
-    margin-bottom: 20px;
+    margin: 20px auto;
     font-weight: 600;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 3rem;
+    color: #171717;
     text-align: left;
     text-transform:uppercase;
-    text-decoration: underline white;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #CD9C4D;
+    border-radius: 10px;
 }
 
 .service-image {
@@ -179,14 +188,18 @@ main{
 }
 
 .service-description p {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 900;
     padding: 5px;
     color: white;
 }
 
 .service-content {
     display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: top;
 }
 
 

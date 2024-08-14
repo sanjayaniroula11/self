@@ -1,334 +1,577 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: minigap;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: minigap;
+  border: none;
 }
-body{
-    background-color: #171717;
+
+body {
+  background-color: #171717;
 }
-nav{
-    display: flex;
-    align-items: center;
-    padding:30px 50px;
-    justify-content: space-between;
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 30px 50px;
+  justify-content: space-between;
 }
-.logo-section{
-    width: 100px;
+
+.logo-section {
+  width: 100px;
 }
-.nav-links{
-    width: 50%;
+
+.nav-links {
+  width: 50%;
 }
+
 .nav-links ul {
-    display: flex;
-    justify-content: end;
-    
+  display: flex;
+  justify-content: end;
 }
-.nav-links ul li{
-    margin-right: 100px;
+
+.nav-links ul li {
+  margin-right: 100px;
 }
-.my-name{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+
+.my-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.my-name h2{
-    font-size: 5rem;
-    font-weight: bold;
-    color: #CD9C4D;
+
+.my-name h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #CD9C4D;
 }
-.sanjaya, .niroula{
+
+.sanjaya,
+.niroula {
   color: #CD9C4D;
   position: relative;
 }
-.my-intro{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-.my-intro h2{
-    color: #D9B464;
+
+.my-intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.hero-wrapper{
-   margin-bottom: 30px;
-   position: relative;
+.my-intro h2 {
+  color: #D9B464;
 }
-main{
-    height: 100vh;
-}
-/*socials*/
 
+.hero-wrapper {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main {
+  height: 100vh;
+}
 
 .socials {
-    position: fixed;
-    top: 35%;
-    left: -100px;
-    z-index: 999;
+  position: fixed;
+  top: 27%;
+  left: -100px;
+  z-index: 999;
 }
 
 .socials ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .socials ul li {
-    cursor: pointer;
-    width: 150px;
-    text-align: left;
-    border: 1px solid #CD9C4D;
-    border-radius: 5px;
-    padding: 7px;
-    border-radius: 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  cursor: pointer;
+  width: 150px;
+  text-align: left;
+  border: 1px solid #CD9C4D;
+  border-radius: 2px;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
-    border: solid 1px #CD9C4D;
-    font-size: 1rem;
-    padding: 5px 10px;
-    background-color: #CD9C4D;
-    color: black;
+  border: solid 1px #CD9C4D;
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #CD9C4D;
+  color: black;
 }
-
 
 .one-social:hover {
-    margin-left: 100px;
-    transition: ease-in-out 0.3s;
-    background-color: #171717;
-    border: solid 1px purple ;
-    color: white;
-
+  margin-left: 100px;
+  transition: ease-in-out 0.3s;
+  background-color: #171717;
+  border: solid 1px purple;
+  color: white;
 }
 
-/*services*/
-
-#heading{
+#heading,
+#second-heading {
   height: 100vh;
   display: flex;
   text-align: center;
   align-items: center;
 }
-#heading h1{
+
+#heading h1,
+#second-heading h1 {
   font-size: 100vh;
 }
 
 .service-provided {
-    /* margin: 30px auto; */
-    padding: 10px 50px;
-    
+  padding: 10px 50px;
 }
 
-
-
-
 .one-grid {
-    width: 75%;
-    height: 85vh;
-    margin-bottom: 15vh;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    padding: 50px;
-    border: 2px solid green;
-
-    /* From https://css.glass */
-    background: #333333;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.4px);
-    -webkit-backdrop-filter: blur(5.4px);
-    border: 1px solid #333333;
-
+  width: 75%;
+  margin-bottom: 15vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: #333333;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  border: 1px solid #333333;
+  text-align: center;
+}
+.project-box{
+  width: 75%;
+  margin-bottom: 15vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: #de6565;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  border: 1px solid #de6565;
+  text-align: center;
 }
 
 .one-grid:hover {
-    /* From https://css.glass */
-    background: rgba(173, 74, 239, 0.22);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.4px);
-    -webkit-backdrop-filter: blur(5.4px);
-    border: 1px solid rgba(173, 74, 239, 0.3);
-    transition: ease-in-out 0.2s;
+  background: rgba(173, 74, 239, 0.22);
+  border: 1px solid rgba(173, 74, 239, 0.3);
+  transition: ease-in-out 0.2s;
+}
+.project-box:hover {
+  background: rgba(15, 87, 3, 0.755);
+  border: 1px solid rgba(173, 74, 239, 0.3);
+  transition: ease-in-out 0.2s;
 }
 
 .icon-section {
-    width: 70%;
-
+  width: 70%;
 }
 
 .service-topic {
-    margin: 20px auto;
-    font-weight: 600;
-    font-size: 3rem;
-    color: #171717;
-    text-align: left;
-    text-transform:uppercase;
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #CD9C4D;
-    border-radius: 10px;
+  margin: 20px auto;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #171717;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #CD9C4D;
+  border-radius: 10px;
 }
 
 .service-image {
-    width: 70%;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.portfolio {
+  width: 100%;
 }
 
 .service-description {
-    width: 70%;
+  width: 70%;
 }
 
 .service-description p {
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding: 5px;
-    color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 5px;
+  color: white;
 }
 
 .service-content {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    text-align: top;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.services-grid{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+.live-button {
+  padding: 15px 100px;
+  background-color: #CD9C4D;
+  border: none;
+  margin-top: 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 5px;
 }
 
+.live-button:hover {
+  background-color: #171717;
+  color: white;
+  transition: ease-in 0.3s;
+}
 
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+}
 
- 
-
-/*-------------------*/
-
-/* From Uiverse.io by vinodjangid07 */ 
 .loader {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.truckWrapper {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: hidden;
+}
+
+.truckBody {
+  width: 130px;
+  height: fit-content;
+  margin-bottom: 6px;
+  animation: motion 1s linear infinite;
+}
+
+@keyframes motion {
+  0% {
+      transform: translateY(0px);
   }
-  
-  .truckWrapper {
-    width: 200px;
-    height: 100px;
+  50% {
+      transform: translateY(3px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+.truckTires {
+  width: 130px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+.truckTires svg {
+  width: 24px;
+}
+
+.road {
+  width: 100%;
+  height: 1.5px;
+  background-color: #282828;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+
+.road::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background-color: #282828;
+  right: -50%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 10px solid white;
+}
+
+.road::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
+  right: -65%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 4px solid white;
+}
+
+.lampPost {
+  position: absolute;
+  bottom: 0;
+  right: -90%;
+  height: 90px;
+  animation: roadAnimation 1.4s linear infinite;
+}
+
+.animation {
+  background-color: #CD9C4D;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+@keyframes roadAnimation {
+  0% {
+      transform: translateX(0px);
+  }
+  100% {
+      transform: translateX(-350px);
+  }
+}
+
+.contact-heading {
+  margin: auto;
+  width: 70%;
+}
+
+.contact-heading h2 {
+  font-size: 10vw;
+}
+
+.contact-section {
+  background-color: transparent;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.info-contact {
+  font-size: 1.5rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  margin: 50px auto;
+  padding: 10px 0;
+}
+
+.form-container input {
+  padding: 10px 30px 5px 10px;
+  background: transparent;
+  font-weight: bold;
+  width: 35%;
+  border-bottom: 2px solid #CD9C4D;
+  outline: none;
+}
+
+#message {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 2px solid #CD9C4D;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  margin-top: 50px;
+}
+
+#button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #CD9C4D;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+#button:hover {
+  padding: 15px 25px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  transition: ease-in-out 0.3s;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+
+.footer-section{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #CD9C4D;
+}
+.one-thing{
+  width: 20%;
+  border: 1px solid #171717;
+  margin: 20px 30px;
+  background-color: #171717;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 20px;
+  text-align: center;
+}
+
+
+.one-thing h5{
+  letter-spacing: 1px;
+}
+.image-footer{
+  width: 100px;
+
+}
+.image-footer img{
+  width: 100%;
+}
+.design{
+  background-color: #fa0e0e;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+      padding: 15px;
+  }
+
+  .nav-links ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .my-name h2 {
+      font-size: 2rem;
+  }
+
+  .my-intro h2 {
+      font-size: 1.2rem;
+  }
+
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .service-provided {
+      padding: 10px;
+  }
+
+  .service-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .icon-section img {
+      max-width: 100%;
+      height: auto;
+  }
+  .nav-links{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-description{
+    width: 100%;
+  }
+  .socials{
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .footer-section{
     display: flex;
     flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: flex-end;
-    overflow-x: hidden;
   }
-  /* truck upper body */
-  .truckBody {
-    width: 130px;
-    height: fit-content;
-    margin-bottom: 6px;
-    animation: motion 1s linear infinite;
+  .one-thing{
+    width: 70%;
+    margin: 20px auto;
   }
-  /* truck suspension animation*/
-  @keyframes motion {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(3px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+  header {
+      padding: 10px;
   }
-  /* truck's tires */
-  .truckTires {
-    width: 130px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px 0px 15px;
-    position: absolute;
-    bottom: 0;
+
+  .logo-section img {
+      max-width: 120px;
   }
-  .truckTires svg {
-    width: 24px;
-  }
-  
-  .road {
-    width: 100%;
-    height: 1.5px;
-    background-color: #282828;
-    position: relative;
-    bottom: 0;
-    align-self: flex-end;
-    border-radius: 3px;
-  }
-  .road::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100%;
-    background-color: #282828;
-    right: -50%;
-    border-radius: 3px;
-    animation: roadAnimation 1.4s linear infinite;
-    border-left: 10px solid white;
-  }
-  .road::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    background-color: #282828;
-    right: -65%;
-    border-radius: 3px;
-    animation: roadAnimation 1.4s linear infinite;
-    border-left: 4px solid white;
-  }
-  
-  .lampPost {
-    position: absolute;
-    bottom: 0;
-    right: -90%;
-    height: 90px;
-    animation: roadAnimation 1.4s linear infinite;
-  }
-  .animation{
-    background-color: #CD9C4D;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    width: 90%;
+  .logo-section{
     margin: auto;
   }
-  @keyframes roadAnimation {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-350px);
-    }
-  }
-  
 
-  .page{
-    height: 100vh;
-    background-color: red;
+  .my-name h2 {
+      font-size: 5rem;
   }
+
+  .my-intro h2 {
+      font-size: 1rem;
+  }
+
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+
+  input, textarea {
+      padding: 8px;
+      font-size: 14px;
+      
+  }
+.form-container input{
+  width: 80%;
+}
+#message{
+  width: 80%;
+}
+.info-contact{
+  width: 80%;
+}
+}

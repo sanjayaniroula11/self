@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         duration:1.5, 
         
     })
+    console.log("sanjaya")
 
     gsap.to("#heading",{
-        transform: "translateX(-100%)",
+        x: "-100%",
         scrollTrigger:{
             trigger:"#heading",
             scroller: "body",
@@ -24,10 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
             end:"top -100%",
             scrub:2,
             pin:true
-
-
         }
-    })
+    });
+    
     gsap.to("#second-heading",{
         transform: "translateX(-100%)",
         scrollTrigger:{

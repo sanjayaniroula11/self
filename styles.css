@@ -133,6 +133,8 @@ main {
 #heading h1,
 #second-heading h1 {
   font-size: 100vh;
+    text-align: center;
+    
 }
 
 .service-provided {
